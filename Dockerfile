@@ -1,6 +1,6 @@
 FROM node:slim
 
-ENV NODE_ENV development
+ENV NODE_ENV=production
 
 WORKDIR /app
 
