@@ -7,6 +7,7 @@
     "dev": "ts-node-dev --respawn ./app.ts",
     "build": "tsc && cp -r views build/views && cp -r public build/public",
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "clean": "rm -rf build"
   },
   "dependencies": {
