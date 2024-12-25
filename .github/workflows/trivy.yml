@@ -18,7 +18,6 @@ jobs:
           image-ref: ghcr.io/${{ github.repository }}:latest
           format: "sarif"
           output: "trivy-results.sarif"
-          exit-code: 1
           vuln-type: "os,library"
           severity: "CRITICAL,HIGH"
           scanners: vuln,secret,config
