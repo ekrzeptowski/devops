@@ -36,8 +36,7 @@ interface ErrorWithStatus extends Error {
 app.use(function (
   err: ErrorWithStatus,
   req: express.Request,
-  res: express.Response,
-  next: express.NextFunction
+  res: express.Response
 ) {
   // set locals, only providing error in development
   res.locals.message = err.message;
